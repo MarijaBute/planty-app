@@ -1,0 +1,184 @@
+.site-home {
+    position: relative;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgb(150, 202, 128) 75%, rgb(150, 202, 128) 100%);
+    height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.socials{
+    transform: rotate(90deg) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #717171 ;
+    position: absolute;
+    left: -50px;
+}
+
+.hero-image {
+    position: absolute;
+    left: 75%;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 600px;
+}
+
+.home-text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    left: 15%;
+    top: 0;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.planty-heading{
+    font-size: 70px;
+}
+
+.home-paragraph p{
+    color: #3a3a3a;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+
+.home-button button{
+    padding: 10px 15px;
+    border: 2px dashed #96ca80;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.shop-button {
+    background: #fff;
+    padding: 20px 20px;
+    max-width: 150px;
+    margin: 12px;
+    display: inline-block;
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    overflow: hidden;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    color: #000;
+  }
+  
+  .shop-button::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #96ca80;
+    opacity: 0;
+    -webkit-transition: .2s opacity ease-in-out;
+    transition: .2s opacity ease-in-out;
+  }
+  
+  .shop-button:hover::before {
+    opacity: 0.4;
+  }
+  
+  .shop-button span {
+    position: absolute;
+  }
+  
+  .shop-button span:nth-child(1) {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 5px;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(150, 202, 128, 0)), to(#96ca80));
+    background: linear-gradient(to left, rgba(150, 202, 128, 0), #96ca80);
+    -webkit-animation: 2s animateTop linear infinite;
+            animation: 2s animateTop linear infinite;
+  }
+  
+  @keyframes animateTop {
+    0% {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+  }
+  
+  .shop-button span:nth-child(2) {
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 5px;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(150, 202, 128, 0)), to(#96ca80));
+    background: linear-gradient(to top, rgba(150, 202, 128, 0), #96ca80);
+    -webkit-animation: 2s animateRight linear -1s infinite;
+            animation: 2s animateRight linear -1s infinite;
+  }
+  
+  @keyframes animateRight {
+    0% {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+  }
+  
+  .shop-button span:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 5px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(150, 202, 128, 0)), to(#96ca80));
+    background: linear-gradient(to right, rgba(150, 202, 128, 0), #96ca80);
+    -webkit-animation: 2s animateBottom linear infinite;
+            animation: 2s animateBottom linear infinite;
+  }
+  
+  @keyframes animateBottom {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    100% {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+  }
+  
+  .shop-button span:nth-child(4) {
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 5px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(150, 202, 128, 0)), to(#96ca80));
+    background: linear-gradient(to bottom, rgba(150, 202, 128, 0), #96ca80);
+    -webkit-animation: 2s animateLeft linear -1s infinite;
+            animation: 2s animateLeft linear -1s infinite;
+  }
+  
+  @keyframes animateLeft {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+    100% {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+  }

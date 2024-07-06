@@ -1,0 +1,36 @@
+.search-bar {
+    position: absolute; 
+    right: 0; 
+    margin: 10px 30px;
+    width: 280px; 
+    height: 80px; 
+    background-color: white; 
+    z-index: 100; 
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+  .search-bar.open {
+    opacity: 1;
+    transform: scale(1); 
+  }
+    
+  .search-items{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #e2e2e2;
+  }
+
+  .search-text{
+    font-size: 16px;
+    color: #808080;
+  }
+  

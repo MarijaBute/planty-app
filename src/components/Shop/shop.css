@@ -1,0 +1,11 @@
+.shop {
+  padding: 20px;
+  text-align: center;
+}
+
+.plant-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adds space between items */
+}

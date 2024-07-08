@@ -1,10 +1,13 @@
 import './home.css'
-import HeroImg from '../../assets/home/hero-img.png'
+import HeroImg from './hero-img.png'
 import { ReactTyped } from "react-typed";
 import { SlSocialFacebook, SlSocialInstagram, SlSocialLinkedin } from "react-icons/sl";
+import BestSeller from '../BestSeller/BestSeller'
 
 export default function Home() {
     return (
+        <>
+       
         <div className="site-home">
             <div className="socials">
             <p>SOCIAL    -----</p>
@@ -36,5 +39,7 @@ export default function Home() {
             </div>
             
         </div>
+        <BestSeller />
+        </>
     )
 }

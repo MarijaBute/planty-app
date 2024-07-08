@@ -1,12 +1,13 @@
 import './header.css'
 import {useState} from 'react';
+import { Link } from "react-router-dom"
 import { IoMdSearch } from "react-icons/io";
 import { IoCartOutline } from "react-icons/io5";
 import { IoClose } from "react-icons/io5"
 import SearchBar from './SearchBar/SearchBar'
 import Cart from './Cart/Cart'
 
-export default function Header() {
+export default function Header({ cartItems, removeFromCart }) {
 
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [isCartOpen, setIsCartOpen] = useState(false);
@@ -27,10 +28,10 @@ export default function Header() {
             </div>
 
             <div className="header-links">
-                <a href="">Home</a>
-                <a href="">Shop</a>
-                <a href="">About Us</a>
-                <a href="">Contact</a>
+            <Link to="/">Home</Link>
+            <Link to="/shop">Shop</Link>
+            <Link to="/about">About us</Link>
+            <Link to="/contact">Contact</Link>
             </div>
 
             <div className="search-cart">
@@ -42,14 +43,12 @@ export default function Header() {
                         )}
                 </button>
 
-                <button className="cart-button" onClick={handleCartOpen}>
-                    {isCartOpen ? (
-                         <IoClose size={18} />
-                    ) : (
-                        <IoCartOutline size={18} />
-                    )}
-                
-                </button>
+                <button className="cart-btn" onClick={handleCartOpen}>
+                        {isCartOpen ? <IoClose size={18} /> : <IoCartOutline size={18} />}
+                        {cartItems.length > 0 && (
+                            <span className="cart-quantity">{cartItems.reduce((total, item) => total + item.quantity, 0)}</span>
+                        )}
+                    </button>
            
             </div>
         </div>
@@ -58,6 +57,10 @@ export default function Header() {
                     isSearchOpen={isSearchOpen} 
                     handleSearchOpen={handleSearchOpen} 
                 />
+            </div>
+
+            <div className="cart-contain">
+            {isCartOpen && <Cart cartItems={cartItems} removeFromCart={removeFromCart} />}
             </div>
         </div>
     )

@@ -3,21 +3,21 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 80px;  /* Adjust according to your header's height */
+    height: 80px; 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;  /* No background */
-    z-index: 10;  /* Ensure the header is above other content */
-    padding-inline: 5rem;  /* Ensure the padding is included for width calculation */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* Optional: Add a shadow for better separation */
+    background: transparent;  
+    z-index: 100;  
+    padding-inline: 5rem;  
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);  
 }
 
 .header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;  /* Ensure full width */
+    width: 100%;  
 }
 
 .header-links,
@@ -32,8 +32,13 @@
 }
 
 .search-button,
-.cart-button {
-    background-color: transparent;  /* No background */
+.cart-btn {
+    background-color: transparent;  
     border: none;
     cursor: pointer;
+}
+
+.cart-quantity{
+    background-color: #96ca80;
+    border-radius: 50%;
 }

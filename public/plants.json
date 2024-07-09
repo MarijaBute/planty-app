@@ -3,79 +3,105 @@
         "id": 1,
         "name": "Aglaonema",
         "description": "A low-maintenance, shade-tolerant plant with striking variegated leaves, perfect for brightening up low-light corners.",
-        "image": "/assets/plants/aglaonema.png"
+        "image": "/assets/plants/aglaonema.png",
+        "old_price": "25",
+        "new_price": "17"
     },
     {
         "id": 2,
         "name": "Alocasia Black Velvet",
         "description": "A dramatic houseplant with deep, velvety black leaves and striking white veins, adding a touch of exotic elegance to any space.",
-        "image": "/assets/plants/alocasia-black-velvet.png"
+        "image": "/assets/plants/alocasia-black-velvet.png",
+        "old_price": "20",
+        "new_price": "15"
     },
     {
         "id": 3,
         "name": "Anthurium",
         "description": "A tropical stunner with vibrant, heart-shaped blooms and glossy leaves, adding a touch of exotic elegance to any indoor space.",
-        "image": "/assets/plants/anthurium.png"
+        "image": "/assets/plants/anthurium.png",
+        "old_price": "20",
+        "new_price": "17"
     },
     {
         "id": 4,
         "name": "Areca Palm",
         "description": "A graceful, air-purifying palm with feathery fronds, bringing a tropical vibe and clean air to your space..",
-        "image": "/assets/plants/areca-palm.png"
+        "image": "/assets/plants/areca-palm.png",
+        "old_price": "35",
+        "new_price": "25"
     },
     {
         "id": 5,
         "name": "Cactus",
         "description": "A low-maintenance succulent with spiky armor and diverse shapes, perfect for adding a touch of the desert to your home.",
-        "image": "/assets/plants/cactus.png"
+        "image": "/assets/plants/cactus.png",
+        "old_price": "15",
+        "new_price": "10"
     },
     {
         "id": 6,
         "name": "Jade Plant",
         "description": "A resilient succulent with thick, glossy leaves, known for its good luck charm reputation and easy-going nature.",
-        "image": "/assets/plants/jade-plant.png"
+        "image": "/assets/plants/jade-plant.png",
+        "old_price": "17",
+        "new_price": "12"
     },
     {
         "id": 7,
         "name": "Jasmine",
         "description": "A fragrant vine with delicate white flowers, known for its intoxicating scent and ability to create a romantic and serene atmosphere.",
-        "image": "/assets/plants/jasmine.png"
+        "image": "/assets/plants/jasmine.png",
+        "old_price": "25",
+        "new_price": "12"
     },
     {
         "id": 8,
         "name": "Monstera",
         "description": "A trendy tropical plant with iconic split leaves, adding a bold and exotic statement to any modern interior.",
-        "image": "/assets/plants/monstera.png"
+        "image": "/assets/plants/monstera.png",
+        "old_price": "28",
+        "new_price": "22"
     },
     {
         "id": 9,
         "name": "Orchid",
         "description": "A delicate and exotic beauty with a wide range of vibrant colors and intricate shapes, symbolizing luxury and elegance.",
-        "image": "/assets/plants/orchid.png"
+        "image": "/assets/plants/orchid.png",
+        "old_price": "25",
+        "new_price": "15"
     },
     {
         "id": 10,
         "name": "Peace Lily",
         "description": "A graceful and air-purifying plant with elegant white blooms and glossy green leaves, adding a touch of peace and tranquility to your space.",
-        "image": "/assets/plants/peace-lily.png"
+        "image": "/assets/plants/peace-lily.png",
+        "old_price": "27",
+        "new_price": "19"
     },
     {
         "id": 11,
         "name": "Snake Plant",
         "description": "A tough and resilient plant with upright, sword-like leaves, known for its air-purifying qualities and ability to thrive in low-light conditions.",
-        "image": "/assets/plants/snake-plant.png"
+        "image": "/assets/plants/snake-plant.png",
+        "old_price": "15",
+        "new_price": "10"
     },
     {
         "id": 12,
         "name": "Spider Plant",
         "description": "A resilient and easy-going plant with arching leaves and adorable baby plantlets, perfect for adding a touch of greenery and life to any space.",
-        "image": "/assets/plants/spider-plant.png"
+        "image": "/assets/plants/spider-plant.png",
+        "old_price": "22",
+        "new_price": "14"
     },
     {
         "id": 13,
         "name": "Umbrella Plant",
         "description": "A tropical-looking houseplant with clusters of oval leaves radiating from a central stem, resembling an open umbrella, bringing a touch of the exotic to your space.",
-        "image": "/assets/plants/umbrella-plant.png"
+        "image": "/assets/plants/umbrella-plant.png",
+        "old_price": "20",
+        "new_price": "15"
     }
 
 ]

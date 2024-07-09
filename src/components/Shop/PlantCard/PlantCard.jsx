@@ -9,6 +9,8 @@ function PlantCard({ plant, addToCart }) {
     const imageUrl = plant.image || 'https://via.placeholder.com/150';
     const name = plant.name || 'Unknown';
     const description = plant.description || 'No description available';
+    const oldPrice = plant.old_price;
+    const newPrice = plant.new_price;
 
     const handleMinus = () => {
         setAmount(amount - 1);
@@ -34,7 +36,12 @@ function PlantCard({ plant, addToCart }) {
             </div>
             <div className="plant-details">
                 <h3>{name}</h3>
+                <div className='prices'>
+                    <p className='old-price'>${oldPrice}</p>
+                    <p className='new-price'>${newPrice}</p>
+                </div>
                 <p>{description}</p>
+
                 <div className="action-row">
                     <ul className="handle-quantity">
                         <li onClick={() => setAmount(Math.max(amount - 1, 0))} style={{ cursor: "pointer" }}>-</li>

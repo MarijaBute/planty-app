@@ -59,9 +59,10 @@
 .checkout {
     width: 100%;
     padding: 10px;
-    background-color: #ffcc00;
-    border: none;
+    background-color: #fff;
+    border: 2px solid #96ca80;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
+    box-shadow: inset #96ca80 0px 0px 30px -12px; 
 }

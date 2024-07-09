@@ -16,7 +16,18 @@
   height: 200px;
   border-radius: 5px;
   object-fit: contain;
+  transition-property: transform;
+  transition-duration: 300ms;
+  transform: scale(1);
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(.39, .575, .565, 1);
 }
+
+.plant-image img:hover {
+  transform: scale(1.1);
+}
+
 
 .plant-details {
   margin-top: 10px;

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import PlantCard from './PlantCard/PlantCard';
 import './shop.css';
+import Img1 from './img/image-1.jpg'
 
 export default function Shop({ addToCart, plantsData }) {
     const [plants, setPlants] = useState([]);

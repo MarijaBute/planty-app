@@ -2,6 +2,7 @@ import './home.css'
 import HeroImg from './hero-img.png'
 import { ReactTyped } from "react-typed";
 import { SlSocialFacebook, SlSocialInstagram, SlSocialLinkedin } from "react-icons/sl";
+import Benefits from '../Benefits/Benefits'
 import BestSeller from '../BestSeller/BestSeller'
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
        
         <div className="site-home">
             <div className="socials">
-            <p>SOCIAL    -----</p>
+            <p>SOCIALS    -----</p>
             <SlSocialFacebook />
             <SlSocialInstagram />
             <SlSocialLinkedin />
@@ -25,20 +26,17 @@ export default function Home() {
                     <p>Grow a greener future, one houseplant at a time.</p>
                 </div>
 
-                <a href="#" className="shop-button">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                SHOP NOW
+
+                <a href="#" className="">
+<button className="button-85" role="button">SHOP NOW</button>
+                
                 </a>
             </div>
 
-            <div className="image-section">
-            <img src={HeroImg} className='hero-image'/>
-            </div>
+            
             
         </div>
+        <Benefits />
         <BestSeller />
         </>
     )

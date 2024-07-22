@@ -1,4 +1,27 @@
+.bestseller-wrapper{
+    padding-inline: 50px;
+}
+
+.bestseller-heading{
+    text-align: center;
+    font-size: 30px;
+    margin-block: 60px;
+}
+
 .bestseller-items{
-    height: 100px;
-    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bestseller-item{
+    box-sizing: border-box;
+    max-width: 300px;
+}
+
+.bestseller-item img{
+    object-fit: contain;
+    max-width: 100%;
+    height: 300px;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.2)) ;
 }

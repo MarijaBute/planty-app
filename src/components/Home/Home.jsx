@@ -3,7 +3,11 @@ import HeroImg from './hero-img.png'
 import { ReactTyped } from "react-typed";
 import { SlSocialFacebook, SlSocialInstagram, SlSocialLinkedin } from "react-icons/sl";
 import Benefits from '../Benefits/Benefits'
+import SaleBanner from '../SaleBanner/SaleBanner'
 import BestSeller from '../BestSeller/BestSeller'
+import OurJourney from '../OurJourney/OurJourney';
+import Features from '../Features/Features';
+import PlaceOrder from '../PlaceOrder/PlaceOrder';
 
 export default function Home() {
     return (
@@ -36,8 +40,11 @@ export default function Home() {
             
             
         </div>
-        <Benefits />
+        <SaleBanner />
+        <OurJourney />
         <BestSeller />
+        <Features />
+        <PlaceOrder />
         </>
     )
 }

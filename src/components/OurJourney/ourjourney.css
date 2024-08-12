@@ -1,0 +1,56 @@
+.our-journey{
+    padding: 60px;
+}
+
+.journey-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 60px;
+}
+
+.journey-left-section,
+.journey-right-section{
+    width: 50%;
+}
+
+.journey-img{
+    max-width: 350px;
+}
+
+.journey-heading{
+    font-size: 52px;
+}
+
+.journey-paragraph{
+        padding-bottom: 30px;
+        font-size: 17px;
+        color: #343434;
+}
+
+.journey-btn button{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 30px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.journey-image-wrapper{
+    position: relative;
+}
+
+.journey-small-image{
+    position: absolute;
+    top: 150px;
+    left: 300px;
+   
+}
+
+.journey-small-img{
+    max-width: 150px;
+    object-fit: cover;
+    border: 5px solid white;
+}

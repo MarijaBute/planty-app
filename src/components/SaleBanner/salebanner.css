@@ -1,0 +1,64 @@
+.sale-banner{
+    padding: 80px;
+}
+.banner-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-img{
+    max-width: 350px;
+}
+
+.banner-left-section,
+.banner-right-section{
+    width: 50%;
+}
+
+.banner-right-section{
+    display: flex;
+    justify-content: center;
+}
+
+.banner-heading{
+    font-size: 52px;
+}
+
+.banner-paragraph{
+    padding-bottom: 30px;
+    font-size: 17px;
+    color: #343434;
+}
+
+.banner-button button{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 30px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.interiors{
+    color: #96ca80;
+}
+
+.banner-image-wrapper{
+    position: relative;
+}
+
+.small-image{
+    position: absolute;
+    top: 30px;
+    right: -120px;
+   
+}
+
+.small-img{
+    max-width: 150px;
+    object-fit: cover;
+    border: 5px solid white;
+}

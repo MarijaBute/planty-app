@@ -3,7 +3,7 @@ import './plantcard.css';
 import { useState } from 'react';
 
 function PlantCard({ plant, addToCart }) {
-    const [amount, setAmount] = useState(0);
+    const [amount, setAmount] = useState(1);
     const [isClicked, setIsClicked] = useState(false);
 
     const imageUrl = plant.image || 'https://via.placeholder.com/150';
@@ -23,7 +23,7 @@ function PlantCard({ plant, addToCart }) {
             setTimeout(() => {
                 addToCart(plant, amount);
                 setIsClicked(false);
-                setAmount(0);
+                setAmount(1);
             }, 2000); 
         }
     };

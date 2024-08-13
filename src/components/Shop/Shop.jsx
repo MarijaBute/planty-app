@@ -23,12 +23,19 @@ export default function Shop({ addToCart, plantsData }) {
 
     return (
         <div className="shop">
-            <h1>Plant Shop</h1>
+                <img src={Img1} alt="" className='shop-background'/>
+            <div className="shop-wrapper">
+            <div className="shop-heading">
+                <h2>Live Plants<span style={{color: '#000'}}>.</span></h2>
+                <p>All our plants are guaranteed to arrive happy & healthy. It’s our customer happiness guarantee!</p>
+            </div>
             <div className="plant-list">
             {plantsData.map((plant) => (
                 <PlantCard key={plant.id} plant={plant} addToCart={addToCart} />
             ))}
             </div>
+            </div>
+          
         </div>
     );
 }

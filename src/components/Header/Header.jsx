@@ -2,8 +2,7 @@ import './header.css'
 import {useState} from 'react';
 import { Link } from "react-router-dom"
 import { IoMdSearch } from "react-icons/io";
-import { IoCartOutline } from "react-icons/io5";
-import { IoClose } from "react-icons/io5"
+import { IoCartOutline, IoClose } from "react-icons/io5";
 import SearchBar from './SearchBar/SearchBar'
 import Cart from './Cart/Cart'
 

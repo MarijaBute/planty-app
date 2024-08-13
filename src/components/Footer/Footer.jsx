@@ -50,6 +50,9 @@ export default function Footer() {
                     </ul>
                 </div>
             </div>
+            <div className="copyright">
+                <p>© 2024, All rights reserved to Marija Buteska</p>
+            </div>
         </footer>
         </>
     )

@@ -24,7 +24,7 @@ export default function Header({ cartItems, removeFromCart }) {
         <div className="site-header">
         <div className="header-wrapper">
             <div className="header-logo">
-                <p>logo</p>
+                <p>PLANTY.</p>
             </div>
 
             <div className="header-links">

@@ -13,6 +13,42 @@
   gap: 20px; 
 }
 
+.shop-image-holder{
+  position: relative;
+}
+
+.shop-card{
+  position: absolute;
+  background-color: #fff;
+  right: 100pt;
+  top: 100pt;
+  width: 350px;
+  height: 350px;
+  padding: 30px;
+}
+
+.shop-card h4{
+  text-align: left;
+  font-size: 14px;
+  color: #808080;
+  text-transform: uppercase;
+}
+
+.shop-card h2{
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 18px;
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.shop-card p{
+  font-size: 15px;
+  margin-top: 2rem;
+  line-height: 1.75rem;
+  text-align: left;
+}
+
 .shop-background{
   object-fit: cover;
   width: 100%;
@@ -31,4 +67,20 @@
 .shop-heading h2{
   font-size: 50px;
   color: #96ca80;
+}
+
+.sort-by{
+  margin-block: 30px;
+}
+
+.sort-by h4{
+  text-transform: uppercase;
+  color: #4e4e4e;
+}
+
+.sort-by select{
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 3px 5px 14px -5px rgba(204,204,204,1);
 }

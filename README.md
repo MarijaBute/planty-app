@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Plant Shop Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React-based plant shop website that offers an engaging and interactive user experience.
 
-## Available Scripts
+The website provides users with a seamless way to explore and purchase various plant species. The user interface includes smooth animations, intuitive navigation, and interactive features that make it easy for customers to find, sort, and order their favorite plants. The site is designed to be responsive, ensuring an optimal layout across different devices.
 
-In the project directory, you can run:
+## Built With
 
-### `npm start`
+- JavaScript
+- React.js
+- HTML5
+- CSS3
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Live Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Live Demo Link](https://planty-app.netlify.app/)
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Home Page**: Includes sections like Hero, Our Journey, Best Seller, Services, and Place an Order, each with engaging animations and information.
+- **Shop**: Users can browse plant items, sort them by name or price, select quantities, and add items to the cart.
+- **Cart Functionality**: Displays items added to the cart. If the cart is empty, it shows a message indicating that.
+- **Contact Page**: Allows users to get in touch with the shop.
 
-### `npm run build`
+## Author
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+👤 **Marija Buteska**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- GitHub: [@MarijaBute](https://github.com/MarijaBute)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/marija-buteska/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+To get a local copy up and running, follow these simple steps.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* You need npm installed on your local machine. For installation details, please visit:
+  [npm documentation](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Setup
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* Next you need to clone the repository on your local machine with the following command line:
+git clone https://github.com/MarijaBute/planty-app
 
-## Learn More
+### Install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* To install the project you need to enter the directory you've cloned. Open a terminal and follow these next steps:
+* npm install (to install all the necessary modules and dependencies)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Usage
 
-### Code Splitting
+* To run this project localy simply run the following line:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm start
 
-### Analyzing the Bundle Size
+* And the project should be deployed on your machine and you can access it on a browser by default on the URL: localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🤝 Contributing
 
-### Making a Progressive Web App
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Feel free to check the [issues page](issues/).
 
-### Advanced Configuration
+## Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Give a ⭐️ if you like this project!
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

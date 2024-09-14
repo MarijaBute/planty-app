@@ -23,7 +23,7 @@
     box-sizing: border-box;
     width: 300px;
     padding: 20px 20px 50px 20px;
-    background-color: #eaede5;
+    background-image: radial-gradient(circle, #e9decc, #f6efdc, #f5f1e9, #fbf6f9, #ffffff);
     border-radius: 7px;
     position: relative;
     overflow: hidden;

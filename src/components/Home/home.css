@@ -1,35 +1,35 @@
 .site-home {
-  position: relative;
-  background: url('../../assets/home/background-img.jpg') no-repeat center center/cover;
-  height: 100vh;
-  padding-top: 80px;
+  background-image: radial-gradient(circle, #e9decc, #f6efdc, #f5f1e9, #fbf6f9, #ffffff);
   display: flex;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
+  position: relative;
+  height: 100%;
 }
 
-.socials{
-    transform: rotate(90deg) !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    color: #000 ;
-    position: absolute;
-    left: -50px;
-}
 
 .home-text-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 75%;
-    height: 100%;
-    position: absolute;
-    left: 10%;
-    top: 0;
-    padding: 0 2rem;
-    box-sizing: border-box;
+    text-align: center;
+}
+
+.hero-image{
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.hero-image-bottom{
+  max-width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: rotate(180deg);
 }
 
 .planty-heading{
@@ -42,199 +42,26 @@
     margin-bottom: 60px;
 }
 
-
-.home-button button{
-    padding: 10px 15px;
-    border: 2px dashed #96ca80;
-    border-radius: 10px;
-    background-color: #fff;
-}
-
 .shop-button {
-    background: #fff;
-    padding: 20px 20px;
-    max-width: 150px;
-    margin: 12px;
-    display: inline-block;
-    -webkit-transform: translate(0%, 0%);
-    transform: translate(0%, 0%);
-    overflow: hidden;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 20px;
-    color: #000;
-  }
-  
-  .shop-button::before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: #96ca80;
-    opacity: 0;
-    -webkit-transition: .2s opacity ease-in-out;
-    transition: .2s opacity ease-in-out;
-  }
-  
-  .shop-button:hover::before {
-    opacity: 0.4;
-  }
-  
-  .shop-button span {
-    position: absolute;
-  }
-  
-  .shop-button span:nth-child(1) {
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 5px;
-    background: -webkit-gradient(linear, right top, left top, from(rgba(150, 202, 128, 0)), to(#96ca80));
-    background: linear-gradient(to left, rgba(150, 202, 128, 0), #96ca80);
-    -webkit-animation: 2s animateTop linear infinite;
-            animation: 2s animateTop linear infinite;
-  }
-  
-  @keyframes animateTop {
-    0% {
-      -webkit-transform: translateX(100%);
-              transform: translateX(100%);
-    }
-    100% {
-      -webkit-transform: translateX(-100%);
-              transform: translateX(-100%);
-    }
-  }
-  
-  .shop-button span:nth-child(2) {
-    top: 0px;
-    right: 0px;
-    height: 100%;
-    width: 5px;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(150, 202, 128, 0)), to(#96ca80));
-    background: linear-gradient(to top, rgba(150, 202, 128, 0), #96ca80);
-    -webkit-animation: 2s animateRight linear -1s infinite;
-            animation: 2s animateRight linear -1s infinite;
-  }
-  
-  @keyframes animateRight {
-    0% {
-      -webkit-transform: translateY(100%);
-              transform: translateY(100%);
-    }
-    100% {
-      -webkit-transform: translateY(-100%);
-              transform: translateY(-100%);
-    }
-  }
-  
-  .shop-button span:nth-child(3) {
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 5px;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(150, 202, 128, 0)), to(#96ca80));
-    background: linear-gradient(to right, rgba(150, 202, 128, 0), #96ca80);
-    -webkit-animation: 2s animateBottom linear infinite;
-            animation: 2s animateBottom linear infinite;
-  }
-  
-  @keyframes animateBottom {
-    0% {
-      -webkit-transform: translateX(-100%);
-              transform: translateX(-100%);
-    }
-    100% {
-      -webkit-transform: translateX(100%);
-              transform: translateX(100%);
-    }
-  }
-  
-  .shop-button span:nth-child(4) {
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 5px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(150, 202, 128, 0)), to(#96ca80));
-    background: linear-gradient(to bottom, rgba(150, 202, 128, 0), #96ca80);
-    -webkit-animation: 2s animateLeft linear -1s infinite;
-            animation: 2s animateLeft linear -1s infinite;
-  }
-  
-  @keyframes animateLeft {
-    0% {
-      -webkit-transform: translateY(-100%);
-              transform: translateY(-100%);
-    }
-    100% {
-      -webkit-transform: translateY(100%);
-              transform: translateY(100%);
-    }
+   padding: 10px 20px;
+   background-color: #000000;
+   color: #ffffff;
+   border: none;
   }
 
+  @media screen and (max-width: 1080px){
+    .home-text-section{
+      z-index: 9999;
+    }
 
-/* CSS */
-.button-85 {
-  padding: 0.6em 2em;
-  border: none;
-  outline: none;
-  color: rgb(255, 255, 255);
-  background: #111;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-85:before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #48ff00,
-    #96ca80,
-    #6a9259,
-    #3ea738
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
-}
-
-@keyframes glowing-button-85 {
-  0% {
-    background-position: 0 0;
+    .hero-image,
+    .hero-image-bottom{
+      opacity: 40%;
+    }
   }
-  50% {
-    background-position: 400% 0;
+  
+  @media screen and (max-width: 600px){
+    .hero-image-bottom{
+      display: none;
+    }
   }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.button-85:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #222;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}

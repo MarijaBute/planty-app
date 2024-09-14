@@ -14,16 +14,13 @@ export default function Home() {
         <>
        
         <div className="site-home">
-            <div className="socials">
-            <p>SOCIALS    -----</p>
-            <SlSocialFacebook />
-            <SlSocialInstagram />
-            <SlSocialLinkedin />
-            </div>
+        <img src={HeroImg} alt="hero image" className='hero-image' />
+            <div className="home-wrapper">
+
             <div className="home-text-section">
                 <div className="home-heading">
                 <h2 className='planty-heading'>
-                <ReactTyped strings={["PLANTY."]} typeSpeed={200} backSpeed={50} loop />
+                PLANTY.
                     </h2>
                 </div>
                 <div className="home-paragraph">
@@ -32,13 +29,14 @@ export default function Home() {
 
 
                 <a href="#" className="">
-<button className="button-85" role="button">SHOP NOW</button>
+<button className="shop-button" role="button">SHOP NOW</button>
                 
                 </a>
             </div>
+            </div>
 
-            
-            
+            <img src={HeroImg} alt="hero image" className='hero-image-bottom' />
+
         </div>
         <SaleBanner />
         <OurJourney />

@@ -54,3 +54,34 @@
     object-fit: cover;
     border: 5px solid white;
 }
+
+@media screen and (max-width: 1180px) {
+    .journey-small-image{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .journey-img{
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .our-journey{
+        padding: 30px;
+    }
+
+    .journey-wrapper{
+        flex-direction: column;
+        padding-inline: 0;
+    }
+
+    .journey-left-section{
+        display: none;
+    }
+
+    .journey-right-section{
+        width: 100%;
+    }
+}

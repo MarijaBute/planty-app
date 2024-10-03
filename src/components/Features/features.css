@@ -39,7 +39,7 @@
   .feature-item {
     display: flex;
     align-items: center;
-    max-width: 400px;
+    width: 400px;
     opacity: 0; 
     transform: scale(0.5);
     transition: all 0.5s ease-out; 
@@ -86,4 +86,19 @@
   
   .image-container img {
     max-width: 100%;
+  }
+
+  @media screen and (max-width: 1080px){
+    .image-container img {
+      display: none;
+    }
+
+    .feature-section{
+      flex-direction: column;
+    }
+
+    .feature-item{
+      width: 100%;
+    }
+   
   }

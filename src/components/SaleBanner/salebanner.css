@@ -62,3 +62,27 @@
     object-fit: cover;
     border: 5px solid white;
 }
+
+@media screen and (max-width: 1080px) {
+    .banner-img{
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .sale-banner{
+        padding: 30px;
+    }
+
+    .banner-wrapper{
+        flex-direction: column;
+    }
+
+    .banner-left-section{
+        width: 100%;
+    }
+
+    .banner-right-section{
+        display: none;
+    }
+}

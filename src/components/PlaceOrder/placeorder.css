@@ -1,9 +1,16 @@
+.place-order{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .place-order-wrapper{
     padding-inline: 7em;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 80px;
+    max-width: 1440px;
 }
 
 .order-heading{
@@ -93,4 +100,27 @@
     margin: 0;
     font-size: 13px;
     color: #777;
+  }
+
+  @media screen and (max-width: 991px) {
+    .place-order-wrapper{
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding-inline: 20px;
+    }
+
+    .order-right-section,
+    .order-left-section{
+        width: 100%;
+    }
+
+    .order-left-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .order-img{
+        max-width: 100%;
+    }
   }

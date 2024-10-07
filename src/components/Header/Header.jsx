@@ -5,11 +5,18 @@ import { IoMdSearch } from "react-icons/io";
 import { IoCartOutline, IoClose } from "react-icons/io5";
 import SearchBar from './SearchBar/SearchBar'
 import Cart from './Cart/Cart'
+import { TbMenuDeep } from "react-icons/tb";
+
 
 export default function Header({ cartItems, removeFromCart }) {
 
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [isCartOpen, setIsCartOpen] = useState(false);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const handleMenuOpen = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen)
+    }
 
     const handleSearchOpen = () => {
         setIsSearchOpen((isOpen) => !isOpen)
@@ -50,6 +57,10 @@ export default function Header({ cartItems, removeFromCart }) {
                     </button>
            
             </div>
+
+            <div className="mobile-menu-toggle" onClick={handleMenuOpen}>
+            <TbMenuDeep size={22}/>
+            </div>
         </div>
         <div className="search-bar-container">
                 <SearchBar 
@@ -61,6 +72,43 @@ export default function Header({ cartItems, removeFromCart }) {
             <div className="cart-contain">
             {isCartOpen && <Cart cartItems={cartItems} removeFromCart={removeFromCart} />}
             </div>
+
+           {isMobileMenuOpen && (
+            <div className="mobile-menu">
+                    <div className="mobile-logo-wrap">
+                    <p>PLANTY.</p>
+                    <button className='close-icon' onClick={handleMenuOpen}><IoClose size={18} /></button>
+                    </div>
+                <div className="mobile-menu-wrapper">
+
+                <div className="mobile-header-links">
+                <Link to="/">Home</Link>
+                <Link to="/shop">Shop</Link>
+                <Link to="/about">About us</Link>
+                <Link to="/contact">Contact</Link>
+                </div>
+
+                <div className="mobile-search-cart">
+                    <button className="mobile-search-button" onClick={handleSearchOpen}>
+                    {isSearchOpen ? (
+                                <IoClose size={18} />
+                            ) : (
+                                <IoMdSearch size={18} />
+                            )}
+                    </button>
+
+                    <button className="mobile-cart-btn" onClick={handleCartOpen}>
+                            {isCartOpen ? <IoClose size={18} /> : <IoCartOutline size={18} />}
+                            {cartItems.length > 0 && (
+                                <span className="cart-quantity">{cartItems.reduce((total, item) => total + item.quantity, 0)}</span>
+                            )}
+                        </button>
+            
+                </div>
+
+                </div>
+            </div>
+                        )}
         </div>
     )
 }

@@ -3,10 +3,9 @@
 }
 
 .footer-wrapper{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24%, 1fr));
+    padding: 5% 10%;
 }
 
 .footer-logo{
@@ -24,16 +23,21 @@
 .footer-links li{
     margin: 0;
     padding: 0;
+    transition: all .2s;
 }
 
 .social-links{
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     margin: 10px 0 0 0;
     padding: 0;
-    gap: 10px;
+    gap: 20px;
     cursor: pointer;
+}
+
+.social-links li{
+    transition: all .2s;
 }
 
 .font-bold{
@@ -55,4 +59,19 @@
 .copyright p{
     font-size: 13px;
     color: rgb(75, 75, 75);
+}
+
+
+@media only screen and (max-width: 992px) {
+    .footer-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)); 
+        grid-gap: 40px ;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(60%, 1fr)); 
+    }
+
 }

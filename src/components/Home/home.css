@@ -32,6 +32,10 @@
   transform: rotate(180deg);
 }
 
+.home-heading{
+  z-index: 100;
+}
+
 .planty-heading{
     font-size: 70px;
 }

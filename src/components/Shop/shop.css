@@ -25,6 +25,7 @@
   width: 350px;
   height: 350px;
   padding: 30px;
+  
 }
 
 .shop-card h4{
@@ -83,4 +84,14 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 3px 5px 14px -5px rgba(204,204,204,1);
+}
+
+@media screen and (max-width: 1090px){
+  .shop-card{
+    display: none;
+  }
+
+  .shop-heading{
+    padding-inline: 0;
+  }
 }

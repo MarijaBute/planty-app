@@ -137,6 +137,14 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .contact-wrapper{
+        padding: 30px;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+    
     .contact-cards {
         grid-template-columns: repeat(auto-fit, minmax(60%, 1fr)); 
     }
